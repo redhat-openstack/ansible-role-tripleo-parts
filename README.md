@@ -1,7 +1,18 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+ansible-role-tripleo-parts
+
+part := reusable chunks of ansible that makes sure a core/basic service is available.
+
+The following are aspects of parts:
+
+1. Super simple.  If the part is doing something more than installing packages and starting a service, it's probably not a part
+
+2. no dependencies
+
+3. Must minimally handle running correctly on Centos as well as RHEL.
+
 
 Requirements
 ------------
@@ -16,23 +27,14 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+None, on purpose.  They are not allowed here.
 
 License
 -------
 
-BSD
+Apache 2
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+RDO Community

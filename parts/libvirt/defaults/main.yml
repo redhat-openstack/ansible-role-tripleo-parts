@@ -1,0 +1,10 @@
+# The packages required to set up our desired libvirt environment.
+libvirt_packages:
+  - qemu-kvm
+  - libvirt
+  - libvirt-python
+  - libguestfs-tools
+  - python-lxml
+
+# The name of the libvirt service.
+libvirtd_service: libvirtd
